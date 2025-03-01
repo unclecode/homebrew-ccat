@@ -13,6 +13,9 @@ class Catcode < Formula
   def install
     # Install the script as catcode
     bin.install "ccat.sh" => "catcode"
+    
+    # Create symlink for shorter name
+    bin.install_symlink "catcode" => "ccode"
   end
 
   test do
