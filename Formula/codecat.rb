@@ -12,8 +12,9 @@ class Codecat < Formula
 
   def install
     bin.install "ccat.sh" => "codecat"
-    # Create a symlink so users can use either 'codecat' or 'ccat4ai'
+    # Create symlinks for alternative names
     bin.install_symlink "codecat" => "ccat4ai"
+    bin.install_symlink "codecat" => "ccat"
   end
 
   test do
