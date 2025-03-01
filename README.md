@@ -1,17 +1,19 @@
-# Homebrew Tap for CCAT
+# Homebrew Tap for CatCode
 
-This repository is a Homebrew Tap for [CCAT (Code Concatenator for AI)](https://github.com/unclecode/ccat).
+This repository is a Homebrew Tap for [CatCode (Code Concatenator for AI)](https://github.com/unclecode/ccat4ai).
 
 ## How do I install these formulae?
 
 ```bash
 # Add this tap
-brew tap unclecode/ccat
+brew tap unclecode/ccode
 
-# Install CCAT
-brew install ccat
+# Install CatCode
+brew install catcode
 ```
+
+This will install the tool as `catcode` with a shorter `ccode` alias.
 
 ## Documentation
 
-For more information on using CCAT, please visit the [main repository](https://github.com/unclecode/ccat).
+For more information on using CatCode, please visit the [main repository](https://github.com/unclecode/ccat4ai).
