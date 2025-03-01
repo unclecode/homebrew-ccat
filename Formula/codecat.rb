@@ -12,13 +12,18 @@ class Codecat < Formula
   depends_on "file"
 
   def install
+    # Modify the script to properly handle the --version flag before installing
+    inreplace "ccat.sh", "VERSION=\"0.1.0\"", "VERSION=\"0.1.1\""
+    
+    # Install the script as codecat
     bin.install "ccat.sh" => "codecat"
+    
     # Create symlinks for alternative names
     bin.install_symlink "codecat" => "ccat4ai"
     bin.install_symlink "codecat" => "ccat"
   end
 
   test do
-    system "#{bin}/codecat", "--version"
+    assert_match "codecat version 0.1.1", shell_output("#{bin}/codecat --version")
   end
 end
