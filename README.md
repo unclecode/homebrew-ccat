@@ -6,7 +6,7 @@ This repository is a Homebrew Tap for [CodeCat4AI (Code Concatenator for AI)](ht
 
 ```bash
 # Add this tap
-brew tap unclecode/ccode
+brew tap unclecode/ccat4ai
 
 # Install CodeCat4AI
 brew install ccat4ai

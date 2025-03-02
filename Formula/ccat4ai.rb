@@ -5,8 +5,8 @@ class Ccat4ai < Formula
   sha256 "9c42c0f98a4ee2e8b9cd9e699963259f13a79dc586037ce9315b390b0aab020c"
   license "MIT"
   
-  # Rename the tap repo to reflect the new name
-  tap "unclecode/ccode"
+  # Use the ccat4ai tap name
+  tap "unclecode/ccat4ai"
 
   depends_on "git"
   depends_on "tree"
